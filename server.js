@@ -6,20 +6,23 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(morgan("dev"));
+require("dotenv").config();
 
-app.use(express.urlencoded({extended:true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-var MONGODB_URL = process.env.MONGODB_URL || "mongodb://localhost/workout";
-mongoose.connect(MONGODB_URL,{  
-    useNewUrlParser:true,
-    useFindAndModify:false
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+mongoose.connect(MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
 })
 
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-app.listen(PORT, () =>{ 
+app.listen(PORT, () => {
     console.log(`App listening on Port ${PORT}`);
 });
