@@ -3,7 +3,7 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 app.use(morgan("dev"));
 require("dotenv").config();
@@ -12,8 +12,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
-mongoose.connect(MONGODB_URI, {
+var  uri = process.env.MONGODB_URI 
+mongoose.connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
