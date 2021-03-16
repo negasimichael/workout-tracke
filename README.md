@@ -26,10 +26,10 @@ The developer is authorizing a free installation by cloning from the code [negas
 
    ## Screenshot Images
    
-![workout-tracker](./public/assets/Images/traker1.png)
+![workout-tracker](./public/Assets/Images/traker1.png)
 
 
-![workout-tracker](./public/assets/Images/traker2.png)
+![workout-tracker](./public/Assets/Images/traker2.png)
 
 ## Contribution
   [negasimichael](https://github.com/negasimichael/workout-tracke) is the only contrubuter of this project .
