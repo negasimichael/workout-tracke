@@ -20,7 +20,9 @@ module.exports =  app =>{
     });
 
     app.get("/api/workouts/range", (req, res) => {
-        Workout.find()
+        Workout.find({})
+        .sort({_id :-1})
+        .limit(7)
             .then(data => {
                 res.json(data)
             })

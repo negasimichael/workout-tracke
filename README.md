@@ -1,11 +1,11 @@
 # workout-tracke
 
 ## Description
-This application is developed to create a tutorial for workout-tracke .
+This app fitnes  that allows the user to view, create, and track daily workouts. The user is able to log multiple exercises in a given day and also go back and update the workout. The user is able to track the name, type, weight, sets, reps and duration of each exercise.The application show the distance traveled in miles.
 
-
+* to start run
 * npm install
-
+* The app runs as a nodemon server.js or node server.js
 
    ## Table of Contents
    * [Installation Instructions](#installation-instructions)
@@ -29,14 +29,12 @@ The developer is authorizing a free installation by cloning from the code [negas
 
 ![workout-tracke](./public/assets/Images/p2.png)
 
-
-
 ## Contribution
   [negasimichael](https://github.com/negasimichael/workout-tracke) is the only contrubuter of this project .
 
    ## Developer Contact Information
   * Linkedin Profile: [negasimichael](https://www.linkedin.com/feed/)
-  * Deployed URL: [negasimichael](#)
+  * Deployed URL: [negasimichael](https://whispering-plateau-43179.herokuapp.com/)
   * Github URL: [negasimichael](https://github.com/negasimichael/workout-tracke)
 
   * Email: negasimichael1@gmail.com
